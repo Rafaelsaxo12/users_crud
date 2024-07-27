@@ -6,6 +6,12 @@ const getAll = catchError(async(req, res) => {
     return res.status(200).json(results)
 });
 
+const getOne = catchError(async(req, res) => {
+    const result = await User.create()
+    return res.status(201).json(result)
+})
+
 module.exports = {
-    getAll
+    getAll,
+    getOne
 }
