@@ -11,5 +11,5 @@ userRouter.route("/:id")
     .get(getOne)
     .delete(destroy)
     .put(update)
-
+     
 module.exports = userRouter;
